@@ -56,6 +56,12 @@
     <Compile Include="FormAccounts.Designer.cs">
       <DependentUpon>FormAccounts.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormAddAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddAccount.Designer.cs">
+      <DependentUpon>FormAddAccount.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormAddCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +86,12 @@
     <Compile Include="FormEditCustomer.Designer.cs">
       <DependentUpon>FormEditCustomer.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormManageAccounts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormManageAccounts.Designer.cs">
+      <DependentUpon>FormManageAccounts.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormManageCustomers.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +104,12 @@
     <Compile Include="FormHome.Designer.cs">
       <DependentUpon>FormHome.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormTransfer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTransfer.Designer.cs">
+      <DependentUpon>FormTransfer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Investment.cs" />
     <Compile Include="Omni.cs" />
     <Compile Include="Program.cs" />
@@ -100,6 +118,9 @@
     <Compile Include="WithdrawalException.cs" />
     <EmbeddedResource Include="FormAccounts.resx">
       <DependentUpon>FormAccounts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddAccount.resx">
+      <DependentUpon>FormAddAccount.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormAddCustomer.resx">
       <DependentUpon>FormAddCustomer.cs</DependentUpon>
@@ -113,11 +134,17 @@
     <EmbeddedResource Include="FormEditCustomer.resx">
       <DependentUpon>FormEditCustomer.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormManageAccounts.resx">
+      <DependentUpon>FormManageAccounts.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormManageCustomers.resx">
       <DependentUpon>FormManageCustomers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormHome.resx">
       <DependentUpon>FormHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTransfer.resx">
+      <DependentUpon>FormTransfer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

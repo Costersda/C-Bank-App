@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace BIT706_Assessment_2_Sean_Coster_5068788.Properties {
+namespace BIT706_Assessment_3_Sean_Coster_5068788.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace BIT706_Assessment_2_Sean_Coster_5068788.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("BIT706_Assessment_2_Sean_Coster_5068788.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("BIT706_Assessment_3_Sean_Coster_5068788.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
