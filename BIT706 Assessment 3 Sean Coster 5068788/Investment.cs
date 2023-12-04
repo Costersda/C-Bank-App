@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BIT706_Assessment_2_Sean_Coster_5068788
+namespace BIT706_Assessment_3_Sean_Coster_5068788
 {
     public class Investment : Account
     {

@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.32802.440
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BIT706 Assessment 3 Sean Coster 5068788", "BIT706 Assessment 3 Sean Coster 5068788\BIT706 Assessment 3 Sean Coster 5068788.csproj", "{71B27E29-6847-4B6F-BF95-3B7E87B4C922}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssessmentTests", "AssessmentTests\AssessmentTests.csproj", "{5A5EAC9D-20AF-4B04-81FB-2FD3D3618DDB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AssessmentTests", "AssessmentTests\AssessmentTests.csproj", "{5A5EAC9D-20AF-4B04-81FB-2FD3D3618DDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpecFlowMoneyTransfers", "SpecFlowMoneyTransfers\SpecFlowMoneyTransfers.csproj", "{7769E09A-388C-4222-A771-32EF45664719}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{5A5EAC9D-20AF-4B04-81FB-2FD3D3618DDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A5EAC9D-20AF-4B04-81FB-2FD3D3618DDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A5EAC9D-20AF-4B04-81FB-2FD3D3618DDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7769E09A-388C-4222-A771-32EF45664719}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7769E09A-388C-4222-A771-32EF45664719}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7769E09A-388C-4222-A771-32EF45664719}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7769E09A-388C-4222-A771-32EF45664719}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

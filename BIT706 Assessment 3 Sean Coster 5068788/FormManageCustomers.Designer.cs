@@ -1,5 +1,5 @@
 ﻿
-namespace BIT706_Assessment_2_Sean_Coster_5068788
+namespace BIT706_Assessment_3_Sean_Coster_5068788
 {
     partial class FormManageCustomers
     {
@@ -37,6 +37,7 @@ namespace BIT706_Assessment_2_Sean_Coster_5068788
             this.btnDeleteCustomer = new System.Windows.Forms.Button();
             this.btnDisplay = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.buttonManageAccounts = new System.Windows.Forms.Button();
             columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
@@ -60,7 +61,8 @@ namespace BIT706_Assessment_2_Sean_Coster_5068788
             this.listViewCustomers.HideSelection = false;
             this.listViewCustomers.Location = new System.Drawing.Point(12, 147);
             this.listViewCustomers.Name = "listViewCustomers";
-            this.listViewCustomers.Size = new System.Drawing.Size(522, 316);
+            this.listViewCustomers.Size = new System.Drawing.Size(522, 409);
+            this.listViewCustomers.Sorting = System.Windows.Forms.SortOrder.Ascending;
             this.listViewCustomers.TabIndex = 2;
             this.listViewCustomers.UseCompatibleStateImageBehavior = false;
             this.listViewCustomers.View = System.Windows.Forms.View.Details;
@@ -98,7 +100,7 @@ namespace BIT706_Assessment_2_Sean_Coster_5068788
             // 
             this.btnDeleteCustomer.BackColor = System.Drawing.Color.Salmon;
             this.btnDeleteCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeleteCustomer.Location = new System.Drawing.Point(565, 398);
+            this.btnDeleteCustomer.Location = new System.Drawing.Point(565, 491);
             this.btnDeleteCustomer.Name = "btnDeleteCustomer";
             this.btnDeleteCustomer.Size = new System.Drawing.Size(168, 65);
             this.btnDeleteCustomer.TabIndex = 6;
@@ -130,12 +132,25 @@ namespace BIT706_Assessment_2_Sean_Coster_5068788
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // buttonManageAccounts
+            // 
+            this.buttonManageAccounts.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonManageAccounts.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonManageAccounts.Location = new System.Drawing.Point(565, 398);
+            this.buttonManageAccounts.Name = "buttonManageAccounts";
+            this.buttonManageAccounts.Size = new System.Drawing.Size(168, 74);
+            this.buttonManageAccounts.TabIndex = 9;
+            this.buttonManageAccounts.Text = "Manage Customers\' Accounts";
+            this.buttonManageAccounts.UseVisualStyleBackColor = false;
+            this.buttonManageAccounts.Click += new System.EventHandler(this.buttonManageAccounts_Click);
+            // 
             // FormManageCustomers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(770, 477);
+            this.ClientSize = new System.Drawing.Size(770, 583);
+            this.Controls.Add(this.buttonManageAccounts);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnDisplay);
             this.Controls.Add(this.btnDeleteCustomer);
@@ -152,6 +167,7 @@ namespace BIT706_Assessment_2_Sean_Coster_5068788
             this.Controls.SetChildIndex(this.labelSubTitle, 0);
             this.Controls.SetChildIndex(this.btnDisplay, 0);
             this.Controls.SetChildIndex(this.button1, 0);
+            this.Controls.SetChildIndex(this.buttonManageAccounts, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -165,5 +181,6 @@ namespace BIT706_Assessment_2_Sean_Coster_5068788
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.Button btnDisplay;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonManageAccounts;
     }
 }

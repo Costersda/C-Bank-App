@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace BIT706_Assessment_2_Sean_Coster_5068788
+namespace BIT706_Assessment_3_Sean_Coster_5068788
 {
     public partial class FormManageCustomers : FormBranding
     {
@@ -123,6 +123,29 @@ namespace BIT706_Assessment_2_Sean_Coster_5068788
         {
             this.DialogResult = DialogResult.Cancel;
             this.Close(); // Close the form
+        }
+
+        private void buttonManageAccounts_Click(object sender, EventArgs e)
+        {
+            // If a customer is selected
+            if (listViewCustomers.SelectedItems.Count > 0)
+            {
+                // Get the selected customers' customer number
+                int selectedCustomerNumber = int.Parse(listViewCustomers.SelectedItems[0].Text);
+                Customer selectedCustomer = customerController.FindCustomerByNumber(selectedCustomerNumber);
+                if (selectedCustomer != null)
+                {
+                    // Open the DisplayCustomer form
+                    FormManageAccounts formDisplay = new FormManageAccounts(selectedCustomer);
+                    formDisplay.Show();
+                }
+            }
+            else
+            {
+                // No customer selected
+                MessageBox.Show("Please select a customer first.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
         }
     }
 }
