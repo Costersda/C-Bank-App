@@ -117,7 +117,7 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
             else
             {
                 // No account selected
-                MessageBox.Show("Please select an account to deposit.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Please select an account to withdraw.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 

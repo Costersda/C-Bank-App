@@ -38,6 +38,13 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
             customers.Add(customer);
         }
 
+        // Add a staff to the list of customers
+        public void AddStaff(string name, string phoneNumber, string emailAddress)
+        {
+            Staff staff = new Staff(name, phoneNumber, emailAddress);
+            customers.Add(staff);
+        }
+
         // Find a customer by their customer number
         public Customer FindCustomerByNumber(int customerNumber)
         {
