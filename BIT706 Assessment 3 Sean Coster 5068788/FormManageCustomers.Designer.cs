@@ -38,6 +38,7 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
             this.btnDisplay = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.buttonManageAccounts = new System.Windows.Forms.Button();
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
@@ -55,7 +56,8 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
             this.listViewCustomers.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.listViewCustomers.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             columnHeader1,
-            this.columnHeader2});
+            this.columnHeader2,
+            this.columnHeader3});
             this.listViewCustomers.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listViewCustomers.FullRowSelect = true;
             this.listViewCustomers.HideSelection = false;
@@ -70,7 +72,7 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
             // columnHeader2
             // 
             this.columnHeader2.Text = "Name";
-            this.columnHeader2.Width = 295;
+            this.columnHeader2.Width = 247;
             // 
             // btnAddCustomer
             // 
@@ -144,6 +146,11 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
             this.buttonManageAccounts.UseVisualStyleBackColor = false;
             this.buttonManageAccounts.Click += new System.EventHandler(this.buttonManageAccounts_Click);
             // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Staff";
+            this.columnHeader3.Width = 76;
+            // 
             // FormManageCustomers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -182,5 +189,6 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
         private System.Windows.Forms.Button btnDisplay;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button buttonManageAccounts;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
     }
 }

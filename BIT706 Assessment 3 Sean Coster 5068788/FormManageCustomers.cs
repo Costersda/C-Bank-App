@@ -12,6 +12,7 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
 {
     public partial class FormManageCustomers : FormBranding
     {
+        private string customerType;
 
         // Constructor
         public FormManageCustomers()
@@ -26,10 +27,24 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
             listViewCustomers.Items.Clear(); // Clear the existing items
             foreach (var customer in customerController.GetCustomers())
             {
+                if (customer.GetType().Name == "Customer")
+                {
+                    customerType = "No";
+                }
+                else if (customer.GetType().Name == "Staff")
+                {
+                    customerType = "Yes";
+                }
+                else
+                {
+                    customerType = "error";
+                }
+
                 var item = new ListViewItem(customer.CustomerNumber.ToString()); // The CustomerNumber as the primary column
                 item.SubItems.Add(customer.Name);
-                item.SubItems.Add(customer.PhoneNumber);
-                item.SubItems.Add(customer.EmailAddress);
+                item.SubItems.Add(customerType);
+                //item.SubItems.Add(customer.PhoneNumber);
+                //item.SubItems.Add(customer.EmailAddress);
                 listViewCustomers.Items.Add(item); // Populate the listview
             }
         }
