@@ -152,10 +152,10 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
             if (listViewAccounts.SelectedItems.Count > 0)
             {
                 int selectedIndex = listViewAccounts.SelectedIndices[0];
-                Account selectedAccount = currentCustomer.Accounts[selectedIndex];
+                Account selectedAccount = currentCustomer.Accounts[selectedIndex];                         
+                MessageBox.Show(selectedAccount.CalculateInterest());
+                LoadAccountIntoListView();
 
-
-               
             }
             else
             {
