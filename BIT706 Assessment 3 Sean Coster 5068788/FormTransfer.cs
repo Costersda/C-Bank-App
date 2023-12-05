@@ -32,13 +32,13 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
             listViewAccounts.Items.Clear(); // Clear the existing items
             foreach (var account in currentCustomer.Accounts)
             {
-                if (account.AccountNumber != currentAccount.AccountNumber)
-                {
+                //if (account.AccountNumber != currentAccount.AccountNumber)
+               // {
                     var item = new ListViewItem(account.AccountNumber.ToString()); // The AccountNumber as the primary column
                     item.SubItems.Add(account.GetType().Name);
                     item.SubItems.Add(account.Balance.ToString());
                     listViewAccounts.Items.Add(item); // Populate the listview
-                }
+              //  }
 
             }
         }
@@ -66,31 +66,40 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
                 int selectedIndex = listViewAccounts.SelectedIndices[0];
                 Account selectedAccount = currentCustomer.Accounts[selectedIndex];
 
-                if (double.TryParse(textBoxTransfer.Text, out double transferAmount))
+                if (selectedAccount.AccountNumber == currentAccount.AccountNumber)
                 {
-                    try
-                    {
-                        // Perform the transfer
-                        currentAccount.Withdraw(transferAmount);
-                        selectedAccount.Deposit(transferAmount);
-                        LoadAccountIntoListView();
-                        MessageBox.Show("Transfer successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        this.DialogResult = DialogResult.OK;  // Show that the transfer was successful.
-                        this.Close();
-
-                    }
-                    catch (WithdrawalException ex)
-                    {
-                        // Display the exception message for a failed transfer
-                        MessageBox.Show(ex.Message, "Transfer Failed", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        CurrentAccountLabels();
-                    }
+                    // No account selected
+                    MessageBox.Show("Please select a different account to transfer.", "Warning, Same account selected", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 else
                 {
-                    // Display an error message for an invalid transfer amount
-                    MessageBox.Show("Please enter a valid numeric transfer amount.");
+                    if (double.TryParse(textBoxTransfer.Text, out double transferAmount))
+                    {
+                        try
+                        {
+                            // Perform the transfer
+                            currentAccount.Withdraw(transferAmount);
+                            selectedAccount.Deposit(transferAmount);
+                            LoadAccountIntoListView();
+                            MessageBox.Show("Transfer successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            this.DialogResult = DialogResult.OK;  // Show that the transfer was successful.
+                            this.Close();
+
+                        }
+                        catch (WithdrawalException ex)
+                        {
+                            // Display the exception message for a failed transfer
+                            MessageBox.Show(ex.Message, "Transfer Failed", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            CurrentAccountLabels();
+                        }
+                    }
+                    else
+                    {
+                        // Display an error message for an invalid transfer amount
+                        MessageBox.Show("Please enter a valid numeric transfer amount.");
+                    }
                 }
+
             }
             else
             {

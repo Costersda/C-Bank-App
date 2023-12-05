@@ -43,6 +43,7 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
             this.textBoxWithdraw = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnCalculateInterest = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelCustomerName
@@ -102,7 +103,7 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
             // 
             this.btnBack.BackColor = System.Drawing.Color.Gold;
             this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.Location = new System.Drawing.Point(620, 18);
+            this.btnBack.Location = new System.Drawing.Point(538, 18);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(168, 65);
             this.btnBack.TabIndex = 9;
@@ -184,11 +185,24 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
             this.label1.TabIndex = 16;
             this.label1.Text = "Amount:";
             // 
+            // btnCalculateInterest
+            // 
+            this.btnCalculateInterest.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnCalculateInterest.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalculateInterest.Location = new System.Drawing.Point(538, 136);
+            this.btnCalculateInterest.Name = "btnCalculateInterest";
+            this.btnCalculateInterest.Size = new System.Drawing.Size(168, 65);
+            this.btnCalculateInterest.TabIndex = 17;
+            this.btnCalculateInterest.Text = "Calculate Interest";
+            this.btnCalculateInterest.UseVisualStyleBackColor = false;
+            this.btnCalculateInterest.Click += new System.EventHandler(this.btnCalculateInterest_Click);
+            // 
             // FormManageAccounts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 439);
+            this.ClientSize = new System.Drawing.Size(734, 439);
+            this.Controls.Add(this.btnCalculateInterest);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBoxWithdraw);
@@ -215,6 +229,7 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
             this.Controls.SetChildIndex(this.textBoxWithdraw, 0);
             this.Controls.SetChildIndex(this.label4, 0);
             this.Controls.SetChildIndex(this.label1, 0);
+            this.Controls.SetChildIndex(this.btnCalculateInterest, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -236,5 +251,6 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
         private System.Windows.Forms.TextBox textBoxWithdraw;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnCalculateInterest;
     }
 }

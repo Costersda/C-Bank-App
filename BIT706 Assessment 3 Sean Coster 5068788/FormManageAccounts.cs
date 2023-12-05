@@ -104,6 +104,7 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
                     {
                         // Display the exception message for a failed withdrawal
                         MessageBox.Show(ex.Message, "Withdrawal Failed", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        LoadAccountIntoListView();
                     }
                 }
                 else
@@ -144,6 +145,23 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
                 MessageBox.Show("Please select an account to transfer.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
+        }
+
+        private void btnCalculateInterest_Click(object sender, EventArgs e)
+        {
+            if (listViewAccounts.SelectedItems.Count > 0)
+            {
+                int selectedIndex = listViewAccounts.SelectedIndices[0];
+                Account selectedAccount = currentCustomer.Accounts[selectedIndex];
+
+
+               
+            }
+            else
+            {
+                // No account selected
+                MessageBox.Show("Please select an account to calculate interest.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
     }
 }
