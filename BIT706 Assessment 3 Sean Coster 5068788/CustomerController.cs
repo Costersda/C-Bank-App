@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace BIT706_Assessment_3_Sean_Coster_5068788
 {
+    [Serializable]
     public class CustomerController
     {
         private List<Customer> customers; // In memory customer database
@@ -16,10 +17,12 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
             customers = new List<Customer>();
         }
 
-        public List<Customer> GetCustomers()
+        public List<Customer> Customers
         {
-            return customers;
+            get { return customers; }
+            set { customers = value; }
         }
+
 
         public Customer GetCustomerByIndex(int index)
         {
