@@ -25,7 +25,7 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
         private void LoadCustomersIntoListView()
         {
             listViewCustomers.Items.Clear(); // Clear the existing items
-            foreach (var customer in customerController.GetCustomers())
+            foreach (var customer in customerController.Customers)
             {
                 if (customer.GetType().Name == "Customer")
                 {

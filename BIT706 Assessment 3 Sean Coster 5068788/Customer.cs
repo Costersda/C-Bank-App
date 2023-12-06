@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace BIT706_Assessment_3_Sean_Coster_5068788
 {
+    [Serializable]
     public class Customer
     {
 
@@ -74,6 +75,12 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
         {
             lastCustomerNumber++; // Increment the account number
             return lastCustomerNumber;
+        }
+
+        public static int LastCustomerNumber
+        {
+            get { return lastCustomerNumber; }
+            set { lastCustomerNumber = value; }
         }
 
     }

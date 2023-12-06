@@ -58,7 +58,7 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(247, 65);
             this.btnExit.TabIndex = 9;
-            this.btnExit.Text = "Exit";
+            this.btnExit.Text = "Save and Exit";
             this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 

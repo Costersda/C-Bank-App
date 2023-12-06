@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace BIT706_Assessment_3_Sean_Coster_5068788
 {
+    [Serializable]
     public abstract class Account
     {
         // Initial account number
@@ -43,6 +44,12 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
         {
             lastAccountNumber++; // Increment the account number
             return lastAccountNumber;
+        }
+
+        public static int LastAccountNumber
+        {
+            get { return lastAccountNumber; }
+            set { lastAccountNumber = value; }
         }
 
         // Abstract Methods
