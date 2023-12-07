@@ -42,9 +42,9 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
             // 
             this.btnManageCustomers.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnManageCustomers.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnManageCustomers.Location = new System.Drawing.Point(58, 136);
+            this.btnManageCustomers.Location = new System.Drawing.Point(83, 136);
             this.btnManageCustomers.Name = "btnManageCustomers";
-            this.btnManageCustomers.Size = new System.Drawing.Size(247, 65);
+            this.btnManageCustomers.Size = new System.Drawing.Size(207, 65);
             this.btnManageCustomers.TabIndex = 5;
             this.btnManageCustomers.Text = "Manage Customers";
             this.btnManageCustomers.UseVisualStyleBackColor = false;
@@ -54,9 +54,9 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
             // 
             this.btnExit.BackColor = System.Drawing.Color.Salmon;
             this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.Location = new System.Drawing.Point(58, 359);
+            this.btnExit.Location = new System.Drawing.Point(83, 359);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(247, 65);
+            this.btnExit.Size = new System.Drawing.Size(207, 65);
             this.btnExit.TabIndex = 9;
             this.btnExit.Text = "Save and Exit";
             this.btnExit.UseVisualStyleBackColor = false;
@@ -64,13 +64,13 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
             // 
             // btnManageAccounts
             // 
-            this.btnManageAccounts.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnManageAccounts.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.btnManageAccounts.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnManageAccounts.Location = new System.Drawing.Point(58, 221);
+            this.btnManageAccounts.Location = new System.Drawing.Point(83, 221);
             this.btnManageAccounts.Name = "btnManageAccounts";
-            this.btnManageAccounts.Size = new System.Drawing.Size(247, 65);
+            this.btnManageAccounts.Size = new System.Drawing.Size(207, 65);
             this.btnManageAccounts.TabIndex = 10;
-            this.btnManageAccounts.Text = "Manage Accounts";
+            this.btnManageAccounts.Text = "Manage Accounts (From AS1)";
             this.btnManageAccounts.UseVisualStyleBackColor = false;
             this.btnManageAccounts.Click += new System.EventHandler(this.btnManageAccounts_Click);
             // 

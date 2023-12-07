@@ -32,13 +32,13 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
             System.Windows.Forms.ColumnHeader columnHeader1;
             this.listViewCustomers = new System.Windows.Forms.ListView();
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btnAddCustomer = new System.Windows.Forms.Button();
             this.btnEditCustomer = new System.Windows.Forms.Button();
             this.btnDeleteCustomer = new System.Windows.Forms.Button();
             this.btnDisplay = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.buttonManageAccounts = new System.Windows.Forms.Button();
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
@@ -64,7 +64,6 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
             this.listViewCustomers.Location = new System.Drawing.Point(12, 147);
             this.listViewCustomers.Name = "listViewCustomers";
             this.listViewCustomers.Size = new System.Drawing.Size(522, 409);
-            this.listViewCustomers.Sorting = System.Windows.Forms.SortOrder.Ascending;
             this.listViewCustomers.TabIndex = 2;
             this.listViewCustomers.UseCompatibleStateImageBehavior = false;
             this.listViewCustomers.View = System.Windows.Forms.View.Details;
@@ -73,6 +72,11 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
             // 
             this.columnHeader2.Text = "Name";
             this.columnHeader2.Width = 247;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Staff";
+            this.columnHeader3.Width = 76;
             // 
             // btnAddCustomer
             // 
@@ -145,11 +149,6 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
             this.buttonManageAccounts.Text = "Manage Customers\' Accounts";
             this.buttonManageAccounts.UseVisualStyleBackColor = false;
             this.buttonManageAccounts.Click += new System.EventHandler(this.buttonManageAccounts_Click);
-            // 
-            // columnHeader3
-            // 
-            this.columnHeader3.Text = "Staff";
-            this.columnHeader3.Width = 76;
             // 
             // FormManageCustomers
             // 

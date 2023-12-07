@@ -58,7 +58,7 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
             if (amount > 0)
             {
                 balance += amount;
-                return "Investment account: " + accountNumber + " \nDeposited: $" + amount + ". \nNew balance: $" + balance;
+                return "Investment account: " + accountNumber + " \nDeposited: $" + amount + ". \nNew balance: " + balance.ToString("C");
             }
             else
             {
@@ -74,7 +74,7 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
             {
                 balance -= amount;
                 // Withdrawal successful
-                return "Investment account: " + accountNumber + " \nWithdrew: $" + amount + ". \nNew balance: $" + balance;
+                return "Investment account: " + accountNumber + " \nWithdrew: $" + amount + ". \nNew balance: " + balance.ToString("C");
             }
             else
             {
@@ -92,7 +92,7 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
             // Calculate interest based on the balance and interest rate
             double interest = balance * interestRate;
             balance += interest;
-            return interestRate + "% Interest rate applied to Investment Account. \nNew balance: $" + balance;
+            return interestRate + "% Interest rate applied to Investment Account. \nNew balance: " + balance.ToString("C");
         }
     }
 }

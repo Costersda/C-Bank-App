@@ -46,6 +46,10 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
             this.btnCalculateInterest = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
+            // labelSubTitle
+            // 
+            this.labelSubTitle.Location = new System.Drawing.Point(109, 85);
+            // 
             // labelCustomerName
             // 
             this.labelCustomerName.AutoSize = true;
@@ -67,7 +71,6 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
             this.listViewAccounts.Location = new System.Drawing.Point(22, 136);
             this.listViewAccounts.Name = "listViewAccounts";
             this.listViewAccounts.Size = new System.Drawing.Size(291, 275);
-            this.listViewAccounts.Sorting = System.Windows.Forms.SortOrder.Ascending;
             this.listViewAccounts.TabIndex = 5;
             this.listViewAccounts.UseCompatibleStateImageBehavior = false;
             this.listViewAccounts.View = System.Windows.Forms.View.Details;

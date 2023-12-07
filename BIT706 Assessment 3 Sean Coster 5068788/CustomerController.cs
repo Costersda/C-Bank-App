@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace BIT706_Assessment_3_Sean_Coster_5068788
 {
@@ -30,6 +31,16 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
             if (index >= 0 && index < customers.Count)
             {
                 return customers[index];
+            }
+            return null; // Return null if the index is out of range.
+        }
+
+        public Account GetAccountByIndex(Customer customer, int index)
+        {
+            // Check if the index is valid before accessing the list.
+            if (index >= 0 && index < customer.Accounts.Count)
+            {
+                return customer.Accounts[index];
             }
             return null; // Return null if the index is out of range.
         }
@@ -78,6 +89,32 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
                 return true; // Delete successful
             }
             return false; // Customer not found
+        }
+
+        public void AccountDeposit(Account account, double amount)
+        {
+            account.Deposit(amount);
+        }
+
+        public void AccountWithdraw(Account account, double amount)
+        {
+            account.Withdraw(amount);
+        }
+
+        public bool AccountTransferCheck(Account wthAccount, Account dpstAccount)
+        {
+            if (wthAccount.AccountNumber == dpstAccount.AccountNumber)
+            {
+                return false;
+            }
+            else
+                return true;
+        }
+
+        public void AccountTransfer(Account wthAccount, Account dpstAccount, double amount)
+        {
+            wthAccount.Withdraw(amount);
+            dpstAccount.Deposit(amount);
         }
     }
 }

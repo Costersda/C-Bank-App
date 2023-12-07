@@ -66,7 +66,7 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
             if (amount > 0)
             {
                 balance += amount;
-                return "Omni account: " + accountNumber + " \nDeposited: $" + amount + ". \nNew balance: $" + balance;
+                return "Omni account: " + accountNumber + " \nDeposited: $" + amount + ". \nNew balance: " + balance.ToString("C");
             }
             else
             {
@@ -83,7 +83,7 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
             {
                 balance -= amount;
                 // Withdrawal successful
-                return "Omni account: " + accountNumber + " \nWithdrew: $" + amount + ". \nNew balance: $" + balance;
+                return "Omni account: " + accountNumber + " \nWithdrew: $" + amount + ". \nNew balance: " + balance.ToString("C");
             }
             else
             {
@@ -103,7 +103,7 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
             {
                 double interest = (balance - 1000) * interestRate;
                 balance += interest;
-                return interestRate + "% Interest rate applied on Omni Account.\nNew balance: $" + balance;
+                return interestRate + "% Interest rate applied on Omni Account.\nNew balance: " + balance.ToString("C");
             }
             else
                 return "Omni Account Balances less than $1000 do not gain interest!";

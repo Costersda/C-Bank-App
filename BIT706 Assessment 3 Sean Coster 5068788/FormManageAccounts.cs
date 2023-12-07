@@ -21,6 +21,7 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
             currentCustomer = selectedCustomer;
             labelSubTitle.Text = "Manage Accounts:"; // Set the subtitle
             LoadAccountIntoListView();
+            labelCustomerName.Text = selectedCustomer.Name;
         }
 
         private void LoadAccountIntoListView()
@@ -30,7 +31,7 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
             {
                 var item = new ListViewItem(account.AccountNumber.ToString()); // The AccountNumber as the primary column
                 item.SubItems.Add(account.GetType().Name);
-                item.SubItems.Add(account.Balance.ToString());
+                item.SubItems.Add(account.Balance.ToString("C"));
                 listViewAccounts.Items.Add(item); // Populate the listview
             }
         }
@@ -61,12 +62,16 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
             {
                 // Get the selected account
                 int selectedIndex = listViewAccounts.SelectedIndices[0];
-                Account selectedAccount = currentCustomer.Accounts[selectedIndex];
+                Account selectedAccount = customerController.GetAccountByIndex(currentCustomer, selectedIndex);
+
+               // Account selectedAccount = currentCustomer.Accounts[selectedIndex];
 
                 if (double.TryParse(textBoxDeposit.Text, out double depositAmount))
                 {
                     // Perform the deposit
-                    selectedAccount.Deposit(depositAmount);
+                    //TODO create a CustomerController method that takes the selected customer, selected account and deposit amount as parameters
+                    customerController.AccountDeposit(selectedAccount, depositAmount);
+                    //selectedAccount.Deposit(depositAmount);
                     LoadAccountIntoListView();
                 }
                 else
@@ -90,14 +95,16 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
             {
                 // Get the selected account
                 int selectedIndex = listViewAccounts.SelectedIndices[0];
-                Account selectedAccount = currentCustomer.Accounts[selectedIndex];
+                Account selectedAccount = customerController.GetAccountByIndex(currentCustomer, selectedIndex);
 
                 if (double.TryParse(textBoxWithdraw.Text, out double withdrawalAmount))
                 {
                     try
                     {
                         // Perform the withdrawal
-                        selectedAccount.Withdraw(withdrawalAmount);
+                        //TODO create a CustomerController method that takes the selected customer, selected account and deposit amount as parameters
+                        customerController.AccountWithdraw(selectedAccount, withdrawalAmount);
+                       // selectedAccount.Withdraw(withdrawalAmount);
                         LoadAccountIntoListView();
                     }
                     catch (WithdrawalException ex)
@@ -126,7 +133,7 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
             if (listViewAccounts.SelectedItems.Count > 0)
             {
                 int selectedIndex = listViewAccounts.SelectedIndices[0];
-                Account selectedAccount = currentCustomer.Accounts[selectedIndex];
+                Account selectedAccount = customerController.GetAccountByIndex(currentCustomer, selectedIndex);
 
 
                 // Open the FormAddCustomer form

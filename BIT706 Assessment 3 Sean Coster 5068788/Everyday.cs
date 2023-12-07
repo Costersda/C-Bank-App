@@ -31,7 +31,7 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
             if (amount > 0)
             {
                 balance += amount;
-                return "Everyday account: " + accountNumber + " \nDeposited: $" + amount + ". \nNew balance: $" + balance;
+                return "Everyday account: " + accountNumber + " \nDeposited: $" + amount + ". \nNew balance: " + balance.ToString("C");
             }
             else
             {
@@ -47,7 +47,7 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
             {
                 balance -= amount;
                 // Withdrawal successful
-                return "Everyday account: " + accountNumber + " \nWithdrew: $" + amount + ". \nNew balance: $" + balance;
+                return "Everyday account: " + accountNumber + " \nWithdrew: $" + amount + ". \nNew balance: " + balance.ToString("C");
             }
             else
             {

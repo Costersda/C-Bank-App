@@ -66,9 +66,9 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
                 int selectedIndex = listViewAccounts.SelectedIndices[0];
                 Account selectedAccount = currentCustomer.Accounts[selectedIndex];
 
-                if (selectedAccount.AccountNumber == currentAccount.AccountNumber)
+                if (!customerController.AccountTransferCheck(selectedAccount, currentAccount))
                 {
-                    // No account selected
+                    // Same account selected
                     MessageBox.Show("Please select a different account to transfer.", "Warning, Same account selected", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 else
@@ -78,8 +78,9 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
                         try
                         {
                             // Perform the transfer
-                            currentAccount.Withdraw(transferAmount);
-                            selectedAccount.Deposit(transferAmount);
+                            customerController.AccountTransfer(currentAccount, selectedAccount, transferAmount);
+                            //currentAccount.Withdraw(transferAmount);
+                            //selectedAccount.Deposit(transferAmount);
                             LoadAccountIntoListView();
                             MessageBox.Show("Transfer successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             this.DialogResult = DialogResult.OK;  // Show that the transfer was successful.
