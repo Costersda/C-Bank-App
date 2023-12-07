@@ -89,10 +89,16 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
         // Calculate and add interest to the balance
         public override string CalculateInterest()
         {
-            // Calculate interest based on the balance and interest rate
-            double interest = balance * interestRate;
-            balance += interest;
-            return interestRate + "% Interest rate applied to Investment Account. \nNew balance: " + balance.ToString("C");
+            if (balance > 0)
+            {
+                // Calculate interest based on the balance and interest rate
+                double interest = balance * interestRate;
+                balance += interest;
+                return interestRate + "% Interest rate applied to Investment Account. \nNew balance: " + balance.ToString("C");
+            }
+            else
+                return "Can only gain interest on positive balances!";
+
         }
     }
 }
