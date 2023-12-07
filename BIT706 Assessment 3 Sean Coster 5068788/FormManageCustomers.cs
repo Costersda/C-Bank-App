@@ -43,8 +43,6 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
                 var item = new ListViewItem(customer.CustomerNumber.ToString()); // The CustomerNumber as the primary column
                 item.SubItems.Add(customer.Name);
                 item.SubItems.Add(customerType);
-                //item.SubItems.Add(customer.PhoneNumber);
-                //item.SubItems.Add(customer.EmailAddress);
                 listViewCustomers.Items.Add(item); // Populate the listview
             }
         }

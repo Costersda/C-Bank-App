@@ -68,7 +68,6 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
                     {
                         // Perform the deposit
                         listBoxOutput.Items.Add(selectedAccount.Deposit(depositAmount));
-
                     }
                     else
                     {

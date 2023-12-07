@@ -45,7 +45,6 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
 
             // Edit the customers details with the inputed data
             customerController.EditCustomer(currentCustomer.CustomerNumber, txtName.Text, txtPhoneNumber.Text, txtEmailAddress.Text);
-
             MessageBox.Show("Customer details updated successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             this.DialogResult = DialogResult.OK;  // Show that the edit was successful.
             this.Close();
