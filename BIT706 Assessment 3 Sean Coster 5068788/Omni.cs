@@ -51,7 +51,7 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
             set { overdraftLimit = value; }
         }
 
-        // Implementation of the methods
+        // Methods
 
         // Display Account Info
         public override string DisplayInfo()

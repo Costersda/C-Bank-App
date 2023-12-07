@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace BIT706_Assessment_3_Sean_Coster_5068788
 {
+    // Creates an Application Data object of the properties to be saved and loaded
     [Serializable]
     public class ApplicationData
     {

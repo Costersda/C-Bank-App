@@ -101,20 +101,38 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
             account.Withdraw(amount);
         }
 
+        // Checks that they are not tranfering money from the same account
         public bool AccountTransferCheck(Account wthAccount, Account dpstAccount)
         {
             if (wthAccount.AccountNumber == dpstAccount.AccountNumber)
             {
-                return false;
+                return false; // Accounts are the same
             }
             else
-                return true;
+                return true; // Accounts are different
         }
 
+        // Transfer between two accounts
         public void AccountTransfer(Account wthAccount, Account dpstAccount, double amount)
         {
             wthAccount.Withdraw(amount);
             dpstAccount.Deposit(amount);
         }
+
+        public bool IsStaffCheck(Customer customer)
+        {
+            if (customer.GetType().Name == "Staff")
+            {
+                return true;
+            }
+            else
+                return false;
+        }
+
+        public void AddAccount(Customer customer, Account account)
+        {
+            customer.AddAccount(account);
+        }
+
     }
 }

@@ -32,17 +32,16 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
             listViewAccounts.Items.Clear(); // Clear the existing items
             foreach (var account in currentCustomer.Accounts)
             {
-                //if (account.AccountNumber != currentAccount.AccountNumber)
-               // {
-                    var item = new ListViewItem(account.AccountNumber.ToString()); // The AccountNumber as the primary column
-                    item.SubItems.Add(account.GetType().Name);
-                    item.SubItems.Add(account.Balance.ToString());
-                    listViewAccounts.Items.Add(item); // Populate the listview
-              //  }
+                var item = new ListViewItem(account.AccountNumber.ToString()); // The AccountNumber as the primary column
+                item.SubItems.Add(account.GetType().Name);
+                item.SubItems.Add(account.Balance.ToString());
+                listViewAccounts.Items.Add(item); // Populate the listview
+
 
             }
         }
 
+        // Sets the current account on the forms labels
         private void CurrentAccountLabels()
         {
             labelAccountNumber.Text = "Account#: " + currentAccount.AccountNumber;
@@ -79,8 +78,6 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
                         {
                             // Perform the transfer
                             customerController.AccountTransfer(currentAccount, selectedAccount, transferAmount);
-                            //currentAccount.Withdraw(transferAmount);
-                            //selectedAccount.Deposit(transferAmount);
                             LoadAccountIntoListView();
                             MessageBox.Show("Transfer successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             this.DialogResult = DialogResult.OK;  // Show that the transfer was successful.

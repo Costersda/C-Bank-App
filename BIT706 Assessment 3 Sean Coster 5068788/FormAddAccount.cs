@@ -36,16 +36,14 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
             if (Everyday.Checked)
             {
                 everydayAccount = new Everyday(0);
-                currentCustomer.AddAccount(everydayAccount);
-                
+                customerController.AddAccount(currentCustomer, everydayAccount); // Add the everyday account via the customer controller
                 MessageBox.Show("Account added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
                 this.DialogResult = DialogResult.OK;  // Show that the account was added.
                 this.Close();
             }
             else if (Investment.Checked)
             {
-                if (currentCustomer.GetType().Name == "Staff")
+                if (customerController.IsStaffCheck(currentCustomer))
                 {
                     isStaff = true;
                 }
@@ -54,16 +52,14 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
                     isStaff = false;
                 }
                 investmentAccount = new Investment(0, 10, 0.04, isStaff);
-                currentCustomer.AddAccount(investmentAccount);
-                
+                customerController.AddAccount(currentCustomer, investmentAccount); // Add the investment account via the customer controller
                 MessageBox.Show("Account added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
                 this.DialogResult = DialogResult.OK;  // Show that the account was added.
                 this.Close();
             }
             else if (Omni.Checked)
             {
-                if (currentCustomer.GetType().Name == "Staff")
+                if (customerController.IsStaffCheck(currentCustomer))
                 {
                     isStaff = true;
                 }
@@ -72,10 +68,8 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
                     isStaff = false;
                 }
                 omniAccount = new Omni(0, 10, 0.04, 500, isStaff);
-                currentCustomer.AddAccount(omniAccount);
-
+                customerController.AddAccount(currentCustomer, omniAccount); // Add the omni account via the customer controller
                 MessageBox.Show("Account added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
                 this.DialogResult = DialogResult.OK;  // Show that the account was added.
                 this.Close();
             }

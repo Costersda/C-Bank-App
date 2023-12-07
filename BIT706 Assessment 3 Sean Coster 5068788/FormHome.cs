@@ -13,27 +13,24 @@ using System.Windows.Forms;
 namespace BIT706_Assessment_3_Sean_Coster_5068788
 {
     public partial class FormHome : FormBranding
-    {
-               
+    {               
 
         public FormHome()
         {
             InitializeComponent();
             labelSubTitle.Text = "Main Menu:";
             ApplicationData deserializedData = DeserializeData(@"Data\appdata.bin");
-            if (deserializedData.Customers != null)
+            if (deserializedData.Customers != null) // If there is saved data set the values
             {
                 customerController.Customers = deserializedData.Customers;
                 Account.LastAccountNumber = deserializedData.LastAccountNumber;
                 Customer.LastCustomerNumber = deserializedData.LastCustomerNumber;
-            }
-            
+            }            
         }
 
         private void btnManageCustomers_Click(object sender, EventArgs e)
         {
             FormManageCustomers manageCustomersForm = new FormManageCustomers();
-
             // Show the FormManageCustomers form
             manageCustomersForm.Show();
         }
@@ -48,6 +45,7 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
         private void btnExit_Click(object sender, EventArgs e)
         {
 
+            // Create an object of the data to be saved
             ApplicationData dataToSerialize = new ApplicationData
             {
                 Customers = customerController.Customers, 

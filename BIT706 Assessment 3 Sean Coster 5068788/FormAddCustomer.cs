@@ -61,9 +61,7 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
                 customerController.AddStaff(txtName.Text, txtPhoneNumber.Text, txtEmailAddress.Text);
             }
 
-
             MessageBox.Show("Customer added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
             this.DialogResult = DialogResult.OK;  // Show that the customer was added.
             this.Close();
         }

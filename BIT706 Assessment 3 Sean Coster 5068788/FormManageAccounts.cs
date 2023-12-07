@@ -64,14 +64,10 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
                 int selectedIndex = listViewAccounts.SelectedIndices[0];
                 Account selectedAccount = customerController.GetAccountByIndex(currentCustomer, selectedIndex);
 
-               // Account selectedAccount = currentCustomer.Accounts[selectedIndex];
-
                 if (double.TryParse(textBoxDeposit.Text, out double depositAmount))
                 {
                     // Perform the deposit
-                    //TODO create a CustomerController method that takes the selected customer, selected account and deposit amount as parameters
                     customerController.AccountDeposit(selectedAccount, depositAmount);
-                    //selectedAccount.Deposit(depositAmount);
                     LoadAccountIntoListView();
                 }
                 else
@@ -79,7 +75,6 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
                     // Display an error message for an invalid deposit amount
                     MessageBox.Show("Please enter a valid numeric deposit amount.");
                 }
-
             }
             else
             {
@@ -102,9 +97,7 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
                     try
                     {
                         // Perform the withdrawal
-                        //TODO create a CustomerController method that takes the selected customer, selected account and deposit amount as parameters
                         customerController.AccountWithdraw(selectedAccount, withdrawalAmount);
-                       // selectedAccount.Withdraw(withdrawalAmount);
                         LoadAccountIntoListView();
                     }
                     catch (WithdrawalException ex)
@@ -119,7 +112,6 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
                     // Display an error message for an invalid withdrawal amount
                     MessageBox.Show("Please enter a valid numeric withdrawal amount.");
                 }
-
             }
             else
             {
@@ -134,7 +126,6 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
             {
                 int selectedIndex = listViewAccounts.SelectedIndices[0];
                 Account selectedAccount = customerController.GetAccountByIndex(currentCustomer, selectedIndex);
-
 
                 // Open the FormAddCustomer form
                 using (var transferForm = new FormTransfer(currentCustomer, selectedAccount))
@@ -151,7 +142,6 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
                 // No account selected
                 MessageBox.Show("Please select an account to transfer.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-
         }
 
         private void btnCalculateInterest_Click(object sender, EventArgs e)
@@ -162,7 +152,6 @@ namespace BIT706_Assessment_3_Sean_Coster_5068788
                 Account selectedAccount = currentCustomer.Accounts[selectedIndex];                         
                 MessageBox.Show(selectedAccount.CalculateInterest());
                 LoadAccountIntoListView();
-
             }
             else
             {
