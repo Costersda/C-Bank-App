@@ -1,0 +1,368 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/Users/sean/source/repos/BIT706 Assessment 3 Sean Coster 5068788/BIT706 Assessment 3 Sean Coster 5068788",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "yK6gNpMP/nIH4gnA5aMgO1vzIyydQif66nsE5JGYr4A="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "VFlfc4fF++4gIEjxGIqY4G0fCfq/8wiL1JxjWTx92bM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "BlPxk5mtl2kgfcZUgkEguqiSAR/EUyUTT4EdebwkQvs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "QlGaeh139V7XnQSBypaJjUZiVIs4EOge/cU72ARWEQo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/BIT706_Assessment_3_Sean_Coster_5068788.Account.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BIT706_Assessment_3_Sean_Coster_5068788.Account.html",
+          "hash": "/29vCVxvz42JFy0KkB2Ho4mtjy/pO2uhd3v6NFoiAJ8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/BIT706_Assessment_3_Sean_Coster_5068788.ApplicationData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BIT706_Assessment_3_Sean_Coster_5068788.ApplicationData.html",
+          "hash": "k6y1aiBjljel9dbBgYvGV8x+jnt6CWrj6tqIdxccKhA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/BIT706_Assessment_3_Sean_Coster_5068788.Customer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BIT706_Assessment_3_Sean_Coster_5068788.Customer.html",
+          "hash": "maWXbN6MGXDrC3O8uw87RqVKP+xl1jVVG/MHJwk11Bk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/BIT706_Assessment_3_Sean_Coster_5068788.CustomerController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BIT706_Assessment_3_Sean_Coster_5068788.CustomerController.html",
+          "hash": "3c1onXfM8VRckV/fgBPwHDxAu6pd+3ZQNNCIKX21jKI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/BIT706_Assessment_3_Sean_Coster_5068788.Everyday.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BIT706_Assessment_3_Sean_Coster_5068788.Everyday.html",
+          "hash": "yZicA6uezEpD39YclXUwp2CYy4DzFZt/u2ZWnyC0kZk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/BIT706_Assessment_3_Sean_Coster_5068788.FormAccounts.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BIT706_Assessment_3_Sean_Coster_5068788.FormAccounts.html",
+          "hash": "GmCwRQQnQD2ZwfAC1vBq4yB/JUIE+PjYuP9N5ZfL3To="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/BIT706_Assessment_3_Sean_Coster_5068788.FormAddAccount.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BIT706_Assessment_3_Sean_Coster_5068788.FormAddAccount.html",
+          "hash": "/mwzvNphZKMRhBzBaBy0Q3Tc8raVGJhCxzZxbSIhEbk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/BIT706_Assessment_3_Sean_Coster_5068788.FormAddCustomer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BIT706_Assessment_3_Sean_Coster_5068788.FormAddCustomer.html",
+          "hash": "XVWpSsM55QDHc6NZSJlvKHlOp+LrgY61JxxVsI5kjks="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/BIT706_Assessment_3_Sean_Coster_5068788.FormBranding.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BIT706_Assessment_3_Sean_Coster_5068788.FormBranding.html",
+          "hash": "omoqA6u5ofxbTmGd3kyVG1l+jqc2r0LErEIR76yj/do="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/BIT706_Assessment_3_Sean_Coster_5068788.FormDisplayCustomer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BIT706_Assessment_3_Sean_Coster_5068788.FormDisplayCustomer.html",
+          "hash": "cFZ6Nk6dTPRC0bKDfzsrRxIyyZnL4Nd8y8/VdbnH1/8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/BIT706_Assessment_3_Sean_Coster_5068788.FormEditCustomer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BIT706_Assessment_3_Sean_Coster_5068788.FormEditCustomer.html",
+          "hash": "9guiKwNz+H4DPfn90e++KyE3WRpzaBH/CekTv8zjWpk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/BIT706_Assessment_3_Sean_Coster_5068788.FormHome.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BIT706_Assessment_3_Sean_Coster_5068788.FormHome.html",
+          "hash": "j+5W56LTm2CEGzb4b10wRNTRXaItpJ5nNfoiVBMnUI0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/BIT706_Assessment_3_Sean_Coster_5068788.FormManageAccounts.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BIT706_Assessment_3_Sean_Coster_5068788.FormManageAccounts.html",
+          "hash": "R0GyxjopnR727su9SUDIPnwKJFCduNOjO++5W7g/FnI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/BIT706_Assessment_3_Sean_Coster_5068788.FormManageCustomers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BIT706_Assessment_3_Sean_Coster_5068788.FormManageCustomers.html",
+          "hash": "4AjfPvWX7ZPYLPXDi/fgxEriPfMAVX2rFaqhCpsn9UE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/BIT706_Assessment_3_Sean_Coster_5068788.FormTransfer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BIT706_Assessment_3_Sean_Coster_5068788.FormTransfer.html",
+          "hash": "nqFcrRUiv72eNMW0rsyum9fiWj0P3aBd5JvnhU9m4f0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/BIT706_Assessment_3_Sean_Coster_5068788.Investment.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BIT706_Assessment_3_Sean_Coster_5068788.Investment.html",
+          "hash": "ethyW1CeJWpPbrJVJraq76QJHnKcV0mwSwlKLgIq3BQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/BIT706_Assessment_3_Sean_Coster_5068788.Omni.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BIT706_Assessment_3_Sean_Coster_5068788.Omni.html",
+          "hash": "0U8vcN2KMNfkThQC1MYcln8+SeLEr6pgSeHMxR0x6ic="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/BIT706_Assessment_3_Sean_Coster_5068788.Staff.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BIT706_Assessment_3_Sean_Coster_5068788.Staff.html",
+          "hash": "8gQS2wAMK6qfL9QNQjEYbNh5Ib7smtA7LCQ02FbUd6w="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/BIT706_Assessment_3_Sean_Coster_5068788.WithdrawalException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BIT706_Assessment_3_Sean_Coster_5068788.WithdrawalException.html",
+          "hash": "XdydeXxV59EmswwUIsYZD5RN6PUK0rnQZhBKC3pD0/I="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/BIT706_Assessment_3_Sean_Coster_5068788.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BIT706_Assessment_3_Sean_Coster_5068788.html",
+          "hash": "G5luigCzz/qP2qLZbD8Run+xtp+0EijWE4zrdz4WmkU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "obj/api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "nPmfStcsxRpFs7jl9v2t4USBPFVfo1x2KJOrW6jeVEg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "Oa9PuD4E1hvZnCkVjUgzNBX6S00Zo5YilamTERTZo54="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 20,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
