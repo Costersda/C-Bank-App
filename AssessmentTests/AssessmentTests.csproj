@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BIT706 Assessment 3 Sean Coster 5068788\BIT706 Assessment 3 Sean Coster 5068788.csproj" />
+    <ProjectReference Include="..\BIT706 Assessment 3 Sean Coster 5068788\App.csproj" />
   </ItemGroup>
 
 </Project>
